@@ -5,48 +5,45 @@ Author - Player__
 */
 
 #define  fast_io ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+typedef long long ll;
+void slv(){
+    int n, m; cin >> n >> m;
+    vector<ll> a(n);
+    map<ll, int> cnt;
+    for (int i = 0; i < n; i++) cin >> a[i], cnt[a[i]]++;
+
+    sort(a.begin(), a.end());
+    ll s = accumulate(a.begin(), a.end(), 0ll);
+  
+    for (int j = 1; j <= m; j++){
+        if (j >= 19){
+            cout << s << " ";
+        }else{
+            ll b = 0;
+            for (int i = 1; ((1<<j)*i) <= m; i++){
+                
+                ll curr = 0;
+                for (int k = i; k <= min(m, (1<<j) * i); k += i){
+                    curr += a.end() - lower_bound(a.begin(), a.end(), k);
+                }
+                curr -= a.end() - lower_bound(a.begin(), a.end(), 1 + (1<<j)*i);
+                b = max(b, curr);
+            }
+         
+            cout << (b == 0 ? s : b) << " ";
+        }
+    }
+    cout << "\n";
+}
+
+
 int main (){
     fast_io
 int t;cin>>t;
  while(t--){
- int n,m;cin>>n>>m;
- vector<int> cnt(m+1,0);
- for(int  i=0;i<n;i++){
-    int x;cin>>x;
-    cnt[x]++;
+slv();
+  
  }
- vector<int> pf(m+1,0);
- for(int i=1;i<=m;i++){
-    pf[i]=pf[i-1]+cnt[i];
- }
- vector<long long > ans;
- long long pw=2;
- while(true){
-    long long b=0;
-
-
-    for(int x=1;x<=m;x++){
-        long long cur=0;
-        for(int q=1;q*x<=m;q++){
-            int l=q*x;
-            int r=min(m,(q+1)*x-1);
-            int amt=pf[r]-pf[l-1];
-            cur+=1LL*min<long long >(q,pw)*amt;
-
-        }
-        b=max(b,cur);
-    }
-    ans.push_back(b);
-    if(pw>= m) break;
-    pw*=2;
-
- }
- for(int k=1;k<=m;k++){
-    int id=min(k-1,(int)ans.size()-1);
-    cout<<ans[id]<<" ";
- }
- cout<<"\n";
-}
 
 
   
