@@ -2,9 +2,7 @@
 //ABC  467
 #include <bits/stdc++.h>
 using namespace std;
-/*
-Author - Kenway-Connor
-*/
+
 typedef long long ll;
 
 int main(){

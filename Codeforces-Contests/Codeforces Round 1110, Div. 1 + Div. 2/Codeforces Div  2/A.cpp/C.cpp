@@ -2,9 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/*
-Author - Kenway-Connor
-*/
+
 typedef long long ll;
 #define pb push_back
 #define fi first

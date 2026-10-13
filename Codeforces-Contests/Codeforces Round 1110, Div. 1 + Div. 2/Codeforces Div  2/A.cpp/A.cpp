@@ -2,9 +2,7 @@
 // #include <bits/stdc++.h>
 // using namespace std;
 
-// /*
-// Author - Kenway-Connor
-// */
+
 
 // #define ll long long
 // #define rep(i,n) for(int i=0;i<n;i++)
@@ -38,9 +36,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/*
-Author - Connor_Kenway
-*/
+
 
 #define ll long long
 #define rep(i,n) for(int i=0;i<n;i++)

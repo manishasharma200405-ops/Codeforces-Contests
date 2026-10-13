@@ -1,7 +1,5 @@
 //as a cp programmer 
-/*
-Author - Kenway-Connor
-*/
+
 #include <bits/stdc++.h>
 
 using namespace std;

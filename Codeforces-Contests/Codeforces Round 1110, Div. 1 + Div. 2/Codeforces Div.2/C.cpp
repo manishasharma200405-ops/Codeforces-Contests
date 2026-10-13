@@ -1,9 +1,7 @@
 //div2 
 #include <bits/stdc++.h>
 using namespace std;
-/*
-Author - Kenway-Connor
-*/
+
 typedef long long ll;
 typedef vector<ll> vl;
 typedef pair<ll,ll> pll;

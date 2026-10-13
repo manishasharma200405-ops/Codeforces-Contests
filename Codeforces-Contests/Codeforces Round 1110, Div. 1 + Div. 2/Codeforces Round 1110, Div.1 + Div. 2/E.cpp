@@ -2,9 +2,7 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-/*
-Author - Kenway-Connor
-*/
+
 // typedef long long ll;
 // #define fori(i,a,b) for(int i=(a); i<(b); i++)
 // #define all(x) (x).begin(), (x).end()

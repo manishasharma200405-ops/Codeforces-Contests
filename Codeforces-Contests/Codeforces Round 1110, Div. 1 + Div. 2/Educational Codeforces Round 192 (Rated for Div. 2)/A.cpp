@@ -2,9 +2,7 @@
 //Div 2  Educational 
 #include <bits/stdc++.h>
 using namespace std;
-/*
-Author - Kenway-Connor
-*/
+
 
  #define rep(i,n) for(int i=0;i<n;i++)
 #define rep1(i,a,b) for(int i=a;i<=b;i++)

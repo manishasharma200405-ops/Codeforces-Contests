@@ -9,7 +9,10 @@ int main (){
     fast_io
 int t;cin>>t;
  while(t--){
- 
+ int x, y;
+        cin >> xa >> y;
+        cout << (x % 2 == 0 || y % 2 == 0 ? "YES" : "NO") << endl;
+ // ohkay it is just all co. ordinates are reahcble expcet where x and y are  odd that it .....
  
 
 }
